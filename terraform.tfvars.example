@@ -1,0 +1,10 @@
+cluster_name = "ocp4"
+base_domain = "example.com"
+openshift_pull_secret = "./openshift_pull_secret.json"
+openshift_version = "4.6.28"
+
+aws_extra_tags = {
+  "owner" = "admin"
+  }
+aws_region = var.workspace_regions[terraform.workspace]
+aws_publish_strategy = "External"
