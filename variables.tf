@@ -20,7 +20,7 @@ Example: `openshift.example.com`.
 Note: This field MUST be set manually prior to creating the cluster.
 This applies only to cloud platforms.
 EOF
-  default     = "nexteramaximo.ibm.com"
+  default     = "ashabilimited.com"
 }
 
 variable "cluster_name" {
