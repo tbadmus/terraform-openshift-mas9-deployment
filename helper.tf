@@ -23,12 +23,12 @@ output "rhcos_ami_name" {
 # Data source to find the RHCOS AMI
 
 # Get the IPAM pool for the AWS region and account
-data "aws_vpc_ipam_pool" "pool" {
-  filter {
-    name   = "locale"
-    values = [var.workspace_regions[terraform.workspace]]
-  }
-}
+# data "aws_vpc_ipam_pool" "pool" {
+#   filter {
+#     name   = "locale"
+#     values = [var.workspace_regions[terraform.workspace]]
+#   }
+# }
 
 # Get aws partition
 data "aws_partition" "current" {}
